@@ -1,3 +1,9 @@
+/*
+
+Compilation: gcc -fno-stack-protector -z execstack shellcode.c -o shellcode
+Usage : ./shellcode
+*/
+
 #include<stdio.h>
 #include<string.h>
 
