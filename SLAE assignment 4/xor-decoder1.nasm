@@ -9,8 +9,8 @@ _start:
 	jmp short call_shellcode	
 
 decoder:
-	pop edi
-	xor ecx , ecx
+	pop edi			; store address of shellcode
+	xor ecx , ecx		; clears ecx
 	mov cl , slen		; Length of the shellcode for iteration
 	
 decode:
