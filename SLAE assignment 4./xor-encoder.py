@@ -6,10 +6,11 @@ def encodeByte(i , cnt):
 
 	j = 0	
 	bad_char = [0, 10, 13, 14]
+	
 	if cnt % 2 == 1:		
-		j =  i^(0xAA)
+		j =  i^(0xAA + 0x6)
 	else:
-		j =  i^(0xBB)
+		j =  i^(0xBB + 0x6)
 
 	if j in bad_char:
 		print 'bad character generated...' + '\n'
@@ -22,7 +23,7 @@ encoded = ""
 encoded2 = ""
 rev_encoded = []
 
-cnt = len(shellcode)
+cnt = 1
 
 for i in bytearray(shellcode):
 	j = encodeByte(i , cnt)
@@ -35,9 +36,10 @@ for i in bytearray(shellcode):
 	encoded2 += "0x"
 	encoded2 += "%02x," %j
 	
-	cnt = cnt - 1
+	cnt = cnt + 1
 
 print encoded + '\n'
 print encoded2 + '\n'
 
 print 'Shellcode length:%d' %len(shellcode)
+
