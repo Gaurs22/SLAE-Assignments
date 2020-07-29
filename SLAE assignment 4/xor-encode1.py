@@ -40,5 +40,6 @@ for i in bytearray(shellcode):
 
 print encoded + '\n'
 print encoded2 + '\n'
+print "Add Loop terminator byte 0x22 at the end of encoded shellcode\n"
 
 print 'Shellcode length:%d' %len(shellcode)
