@@ -4,9 +4,8 @@ section .text
 
 	_start:        
 
-
 		cdq
-
+		
         	mov    al,0x6		; close syscall no
         	int    0x80		; informs kernel for execution
          	
