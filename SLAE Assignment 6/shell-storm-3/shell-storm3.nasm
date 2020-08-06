@@ -1,6 +1,6 @@
 ; Linux/x86 - execve /bin/sh shellcode
 ; http://shell-storm.org/shellcode/files/shellcode-827.php
-
+; 
 global _start
 
 section .text
