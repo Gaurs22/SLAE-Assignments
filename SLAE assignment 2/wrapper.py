@@ -41,8 +41,8 @@ if len(port[2:]) == 3:
 	s1 = int(b2 , 16)
 	s2 = int(b1 , 16)
 
-	shellcode1[22] = s1
-	shellcode1[23] = s2
+	shellcode1[26] = s1
+	shellcode1[27] = s2
 
 else:
 	b1 = port[2:][2:]
