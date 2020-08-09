@@ -4,11 +4,9 @@
 /*
 
 Compilation: gcc sig_action.c -o sig_action -fno-stack-protector -z execstack
-
 Execution: ./sig_action
 
 */
-
 
 unsigned char egghunter[] = \
 
