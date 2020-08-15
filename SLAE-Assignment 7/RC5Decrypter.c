@@ -5,7 +5,7 @@
 /*
 
 Compilation : gcc -o RC5Decrypter RC5Decrypter
-Execution   : ./RC5Decrypter <decryption_key>
+Execution   : ./RC5Decrypter <16-bytes decryption_key>
 
 */
 
