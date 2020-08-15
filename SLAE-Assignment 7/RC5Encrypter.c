@@ -6,7 +6,7 @@
 
 Compilation : gcc RC5Encrypter.c -o RC5Encrypter
 
-Execution   : ./RC5Encrypter
+Execution   : ./RC5Encrypter <16 bytes encryption key>
 
 Description : Copy and paste encrypted shellcode
 	      in RC5Decrypter.c program.
