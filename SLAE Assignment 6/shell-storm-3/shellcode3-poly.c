@@ -2,7 +2,7 @@
 #include<string.h>
 
 /* 
-Compilation: gcc -fno-stack-protector -z execstack shellcode.c -o shellcode3-poly
+Compilation: gcc -fno-stack-protector -z execstack shellcode3-poly.c -o shellcode3-poly
 */
 
 unsigned char shellcode[] = \
