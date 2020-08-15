@@ -7,7 +7,7 @@ Usage : ./shellcode
 #include<stdio.h>
 #include<string.h>
 
-unsigned char shellcode[] = "";
+unsigned char shellcode[] = "";  //Put your shellcode here.
 main()
 {
 	
