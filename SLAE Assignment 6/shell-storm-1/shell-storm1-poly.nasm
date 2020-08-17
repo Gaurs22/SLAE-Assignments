@@ -4,7 +4,8 @@ section .text
 
 	_start:        
 
-        	mov    al,0x6		; close syscall no
+        	cdq			; edx=0
+		mov    al,0x6		; close syscall no
         	int    0x80		; informs kernel for execution
 
 		push   edx		
